@@ -8,6 +8,6 @@ package tp.lofteurs;
  *
  * @author jonathancozzo
  */
-public class ObjetDessinable {
+public interface ObjetDessinable {
     
 }
