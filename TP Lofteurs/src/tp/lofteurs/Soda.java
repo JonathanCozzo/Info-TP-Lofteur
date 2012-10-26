@@ -4,11 +4,9 @@
  */
 package tp.lofteurs;
 
-
 public class Soda extends Nourriture {
-    public Soda(){
-    	super(5);
+
+    public Soda() {
+        super(5);
     }
-    
-    
 }

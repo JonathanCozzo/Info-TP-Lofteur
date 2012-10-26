@@ -4,7 +4,9 @@
  */
 package tp.lofteurs;
 
-
 public class Pizza extends Nourriture {
-    
+
+    public Pizza() {
+        super(3);
+    }
 }

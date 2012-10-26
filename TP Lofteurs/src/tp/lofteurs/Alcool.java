@@ -4,7 +4,9 @@
  */
 package tp.lofteurs;
 
-
 public class Alcool extends Nourriture {
     
+       public Alcool() {
+        super(-5);
+    }
 }
