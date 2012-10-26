@@ -25,7 +25,23 @@ public abstract class Lofteur implements ObjetDessinable {
         this.y = (int)(Math.random() * 100) ;
     }
     
-    public abstract void manger() ;
+    public abstract void manger(){
+        public void manger() {
+            if ( ( !this.loft.tableNourriture[x][y].isEmpty() ) && (this.besoin > this.energie) ) 
+            {
+                if (besoin-energie >= this.loft.tableNourriture[x][y].getValeurEnerg())
+                    {
+                        this.energie += this.loft.tableNourriture[x][y].getValeurEnerg() ;
+                        this.loft.supprimerNourriture(this.x, this.y) ;
+                    }
+                else
+                    {
+                        this.loft.tableNourriture[x][y].setValeurEnerg() = this.loft.tableNourriture[x][y].getValeurEnerg() + this.besoin - this.energie ;
+                        this.energie = this.besoin ;
+                    }
+            }
+        }
+    }
     
     public void seReproduire() {
         int i = 0 ;
