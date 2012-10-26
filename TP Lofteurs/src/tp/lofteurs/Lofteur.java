@@ -16,7 +16,7 @@ public abstract class Lofteur implements ObjetDessinable {
     protected int x ;
     protected int y ;
     
-    public void Lofteur(int bs, Loft lf) {
+    public Lofteur(int bs, Loft lf) {
         this.energie = 20 ;
         this.sexe = (Math.random() >= 0.5) ;
         this.besoin = bs ;

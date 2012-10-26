@@ -7,7 +7,7 @@ package tp.lofteurs;
 public class Erratique extends Lofteur {
  
     
-    public void Erratique(Loft lf) {
+    public Erratique(Loft lf) {
         super(15, lf) ;
     }
     
