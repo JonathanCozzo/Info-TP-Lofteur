@@ -6,5 +6,9 @@ package tp.lofteurs;
 
 
 public class Soda extends Nourriture {
+    public Soda(){
+    	super(5);
+    }
+    
     
 }
