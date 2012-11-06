@@ -4,19 +4,21 @@
  */
 package tp.lofteurs;
 
+import java.awt.Graphics;
+
 public class Lapin extends Lofteur {
 
 	public Lapin(Loft lf) {
-		super(20);
+		super(20, lf);
 	}
 
-	public deplacer(){
-	        int a, b;
+	public void deplacer(){
+	        int a=0, b=0, i, j;
 	        boolean trouve = false;
-	        for (i = -1; i++; i <= 1) {
-	            for (j = -1; j++; j <= 1) {
+	        for (i = -1; i <= 1; i++) {
+	            for (j = -1; j <= 1; j++) {
 	                if ((0 <= this.x + i) && (this.x + i <= 99) && (0 <= this.x + i) && (this.x + i <= 99)) {
-	                    if (this.loft.tableLofteur[x+i][y+j].size() > 0) {
+	                    if (this.loft.tableLofteur[x+i][y+j].length > 0) {
 	                        a = i;
 	                        b = j;
 	                        trouve = true;
@@ -30,5 +32,11 @@ public class Lapin extends Lofteur {
 	            this.x += a;
 	            this.y += b;
 	        }
+	}
+
+	@Override
+	public void dessinerObjet(Graphics g) {
+		// TODO Auto-generated method stub
+		
 	}
 }

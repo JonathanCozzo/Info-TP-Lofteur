@@ -4,6 +4,8 @@
  */
 package tp.lofteurs;
 
+import java.awt.Graphics;
+
 /**
  *
  * @author jonathancozzo
@@ -23,5 +25,5 @@ public abstract class Nourriture implements ObjetDessinable{
 		this.valEnerg=val;
 	}
 	
-	public abstract dessinerObjet(graphics g);
+	public abstract void dessinerObjet(Graphics g);
 }

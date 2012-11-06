@@ -4,6 +4,8 @@
  */
 package tp.lofteurs;
 
+import java.awt.Graphics;
+
 /**
  *
  * @author jonathancozzo
@@ -28,11 +30,11 @@ public abstract class Lofteur implements ObjetDessinable {
 
     public void manger() {
         if ((!this.loft.tableNourriture[x][y].isEmpty()) && (this.besoin > this.energie)) {
-            if (besoin - energie >= this.loft.tableNourriture[x][y].getValeurEnerg()) {
-                this.energie += this.loft.tableNourriture[x][y].getValeurEnerg();
+            if (besoin - energie >= this.loft.tableNourriture[x][y].getValEnerg()) {
+                this.energie += this.loft.tableNourriture[x][y].getValEnerg();
                 this.loft.supprimerNourriture(this.x, this.y);
             } else {
-                this.loft.tableNourriture[x][y].setValeurEnerg() = this.loft.tableNourriture[x][y].getValeurEnerg() + this.besoin - this.energie;
+                this.loft.tableNourriture[x][y].setValEnerg(this.loft.tableNourriture[x][y].getValEnerg() + this.besoin - this.energie);
                 this.energie = this.besoin;
             }
         }
@@ -41,9 +43,9 @@ public abstract class Lofteur implements ObjetDessinable {
     public void seReproduire() {
         int i = 0;
         boolean b = false;
-        if ((this.energie >= 5) && (this.loft.tableLofteur[x][y].size())) {
-            while ((i <= this.loft.tableLofteur[x][y].size()) && (!b)) {
-                if (this.sexe = this.loft.tableLofteur[x][y].get(i).sexe) {
+        if ((this.energie >= 5) && (this.loft.tableLofteur[x][y].length > 1)) {
+            while ((i <= this.loft.tableLofteur[x][y].length) && (!b)) {
+                if (this.sexe = this.loft.tableLofteur[x][y][i].sexe) {
                     i++;
                 } else {
                     b = true;

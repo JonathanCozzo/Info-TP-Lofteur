@@ -4,6 +4,8 @@
  */
 package tp.lofteurs;
 
+import java.awt.Graphics;
+
 public class Vorace extends Lofteur {
 
     public Vorace(Loft lf) {
@@ -11,10 +13,10 @@ public class Vorace extends Lofteur {
     }
 
     public void deplacer() {
-        int a, b;
+        int a, b, i, j;
         boolean trouve = false;
-        for (i = -1; i++; i <= 1) {
-            for (j = -1; j++; j <= 1) {
+        for (i = -1; i<=1; i++) {
+            for (j = -1; j<=1; j++) {
                 if ((0 <= this.x + i) && (this.x + i <= 99) && (0 <= this.x + i) && (this.x + i <= 99)) {
                     if (!this.loft.tableNourriture[x + i][y + j].isEmpty()) {
                         a = i;
@@ -32,5 +34,11 @@ public class Vorace extends Lofteur {
         }
 
     }
+
+	@Override
+	public void dessinerObjet(Graphics g) {
+		// TODO Auto-generated method stub
+		
+	}
     
 }
