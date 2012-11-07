@@ -14,12 +14,14 @@ public class Loft {
     protected int h;
     protected Nourriture[][] tableNourriture;
     protected Lofteur[][][] tableLofteur;
-    public int TAILLE_CASE_X  = TPLofteurs.TAILLE_FENETRE_X / w;
-    public int TAILLE_CASE_Y  = TPLofteurs.TAILLE_FENETRE_Y / h;
+    public int TAILLE_CASE_X;
+    public int TAILLE_CASE_Y;
 
     public Loft() {
         this.w = 100;
         this.h = 100;
+        TAILLE_CASE_X  = TPLofteurs.TAILLE_FENETRE_X / w;
+        TAILLE_CASE_Y  = TPLofteurs.TAILLE_FENETRE_Y / h;
         this.tableNourriture = new Nourriture[100][100];
         this.tableLofteur = new Lofteur[100][100][10];
     }
