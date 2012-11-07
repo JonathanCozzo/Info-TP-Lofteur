@@ -10,7 +10,7 @@ import java.awt.Color;
 public class Alcool extends Nourriture {
 
     public Alcool(int x, int y) {
-        super(-5, x, y); //
+        super(-5, x, y);
     }
 
     @Override

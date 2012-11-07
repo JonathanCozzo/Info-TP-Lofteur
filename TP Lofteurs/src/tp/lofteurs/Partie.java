@@ -9,5 +9,4 @@ package tp.lofteurs;
  * @author jonathancozzo
  */
 public class Partie {
-    
 }

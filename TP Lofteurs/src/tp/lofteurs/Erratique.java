@@ -12,9 +12,7 @@ public class Erratique extends Lofteur {
         super(15, lf);
     }
 
-
-	public void dessinerObjet(Graphics g) {
-		// TODO Auto-generated method stub
-		
-	}
+    public void dessinerObjet(Graphics g) {
+        // TODO Auto-generated method stub
+    }
 }

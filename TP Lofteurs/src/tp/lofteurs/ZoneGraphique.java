@@ -17,64 +17,65 @@ import javax.swing.JFrame;
  */
 public class ZoneGraphique extends JFrame {
 
-        /**
-         * la liste d'objets à dessiner
-         */
-        LinkedList<ObjetDessinable> liste;
+    /**
+     * la liste d'objets à dessiner
+     */
+    LinkedList<ObjetDessinable> liste;
 
-        /**
-         * constructeur
-         *
-         * @param titre le nom de l'application
-         */
-        public ZoneGraphique(String titre) {
-                // appel au constructeur de base
-                super(titre);
+    /**
+     * constructeur
+     *
+     * @param titre le nom de l'application
+     */
+    public ZoneGraphique(String titre) {
+        // appel au constructeur de base
+        super(titre);
 
-                // ajout d'une taille par défaut
-                setSize(TPLofteurs.TAILLE_FENETRE_X, TPLofteurs.TAILLE_FENETRE_Y);
+        // ajout d'une taille par défaut
+        setSize(TPLofteurs.TAILLE_FENETRE_X, TPLofteurs.TAILLE_FENETRE_Y);
 
-                // création de la liste d'objets
-                liste = new LinkedList<ObjetDessinable>();
+        // création de la liste d'objets
+        liste = new LinkedList<ObjetDessinable>();
 
-                // ajout d'un listener
-                addWindowListener(new WindowAdapter() {
-                        @Override
-                        public void windowClosing(WindowEvent e) {
-                                System.exit(0);
-                        }
-                });
+        // ajout d'un listener
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
-                // création du panneau
-                LoftPanel a = new LoftPanel(liste);
-                getContentPane().add(a);
+        // création du panneau
+        LoftPanel a = new LoftPanel(liste);
+        getContentPane().add(a);
 
-                setVisible(true);
-        }
+        setVisible(true);
+    }
 
-        /**
-         * ajout d'un objet dans la zone graphique
-         */
-        void ajouterObjet(ObjetDessinable o) {
-                liste.add(o);
-        }
+    /**
+     * ajout d'un objet dans la zone graphique
+     */
+    void ajouterObjet(ObjetDessinable o) {
+        liste.add(o);
+    }
 
-        /**
-         * largeur de la partie dessinable
-         * @return 
-         */
-        @Override
-        public int getWidth() {
-                return getContentPane().getWidth();
-        }
+    /**
+     * largeur de la partie dessinable
+     *
+     * @return
+     */
+    @Override
+    public int getWidth() {
+        return getContentPane().getWidth();
+    }
 
-        /**
-         * hauteur de la partie dessinable
-         * @return 
-         */
-        @Override
-        public int getHeight() {
-                return getContentPane().getHeight();
-        }
+    /**
+     * hauteur de la partie dessinable
+     *
+     * @return
+     */
+    @Override
+    public int getHeight() {
+        return getContentPane().getHeight();
+    }
 }
-

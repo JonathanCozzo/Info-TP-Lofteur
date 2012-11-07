@@ -14,8 +14,8 @@ public class Loft {
     protected int h;
     protected Nourriture[][] tableNourriture;
     protected Lofteur[][][] tableLofteur;
-    public int TAILLE_CASE_X;
-    public int TAILLE_CASE_Y;
+    public static int TAILLE_CASE_X;
+    public static int TAILLE_CASE_Y;
 
     public Loft() {
         this.w = 100;
