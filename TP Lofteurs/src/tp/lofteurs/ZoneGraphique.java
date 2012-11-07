@@ -1,14 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author moreau
- */
-
-package tp2;
+package tp.lofteurs;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
