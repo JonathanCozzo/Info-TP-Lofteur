@@ -1,35 +1,45 @@
-package com.objet.lofteurs;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author moreau
+ */
+
+package tp2;
 
 import java.awt.Graphics;
 import java.util.LinkedList;
-
 import javax.swing.JPanel;
 
 /**
  * un panneau de dessin pour le loft
  * 
- * @author moreau
+ * @author morreau
  *
  */
 class LoftPanel extends JPanel {
 	/**
-	 * référence sur la liste des objets à dessiner
+	 * r�f�rence sur la liste des objets � dessiner
 	 */
 	private LinkedList<ObjetDessinable> listeObjets;
 	
 	/**
 	 * constructeur
 	 * 
-	 * @param listeObjets référence sur la liste des objets (gérée par la ZoneGraphique)
+	 * @param listeObjets r�f�rence sur la liste des objets (g�r�e par la ZoneGraphique)
 	 */
-	public LoftPanel(LinkedList<ObjetDessinable> listeObjets) {
+	LoftPanel(LinkedList<ObjetDessinable> listeObjets) {
 		this.listeObjets = listeObjets;
 	}
 	
 	/**
-	 * on redéfinit la méthode paint() : elle se contente d'appeler les méthodes
+	 * on red�finit la m�thode paint() : elle se contente d'appeler les m�thodes
 	 * dessinerObjet() de la liste d'objets dessinables
 	 */
+        @Override
 	public void paintComponent(Graphics g) {
 		super.paintComponents(g);
 		
