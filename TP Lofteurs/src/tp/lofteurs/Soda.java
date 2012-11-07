@@ -8,13 +8,12 @@ import java.awt.Graphics;
 
 public class Soda extends Nourriture {
 
-    public Soda() {
-        super(5);
+    public Soda(int x, int y) {
+        super(5, x, y);
     }
 
-	@Override
-	public void dessinerObjet(Graphics g) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void dessinerObjet(Graphics g) {
+        // TODO Auto-generated method stub
+    }
 }
