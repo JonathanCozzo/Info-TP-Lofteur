@@ -5,16 +5,16 @@
 package tp.lofteurs;
 
 import java.awt.Graphics;
+import java.awt.Color;
 
 public class Pizza extends Nourriture {
 
-    public Pizza() {
-        super(3);
+    public Pizza(int x, int y) {
+        super(3, x, y);
     }
 
-	@Override
-	public void dessinerObjet(Graphics g) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void dessinerObjet(Graphics g) {
+        // TODO Auto-generated method stub
+    }
 }

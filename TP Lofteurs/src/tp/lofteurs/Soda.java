@@ -5,6 +5,7 @@
 package tp.lofteurs;
 
 import java.awt.Graphics;
+import java.awt.Color;
 
 public class Soda extends Nourriture {
 
@@ -14,6 +15,7 @@ public class Soda extends Nourriture {
 
     @Override
     public void dessinerObjet(Graphics g) {
-        // TODO Auto-generated method stub
+        super.dessinerObjet(g);
+        g.setColor(Color.black);
     }
 }
