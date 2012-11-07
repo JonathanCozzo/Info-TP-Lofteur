@@ -29,7 +29,7 @@ public abstract class Lofteur implements ObjetDessinable {
     }
 
     public void manger() {
-        if ((!this.loft.tableNourriture[x][y].isEmpty()) && (this.besoin > this.energie)) {
+        if ((!(this.loft.tableNourriture[x][y]==null)) && (this.besoin > this.energie)) {
             if (besoin - energie >= this.loft.tableNourriture[x][y].getValEnerg()) {
                 this.energie += this.loft.tableNourriture[x][y].getValEnerg();
                 this.loft.supprimerNourriture(this.x, this.y);
@@ -50,7 +50,7 @@ public abstract class Lofteur implements ObjetDessinable {
                 } else {
                     b = true;
                     this.energie -= 5;
-                    this.loft.addLofteur(this.sexe, this.loft.tableLofteur[x][y]);
+                    this.loft.addLofteur(this.sexe, x,y);
                 }
             }
         }

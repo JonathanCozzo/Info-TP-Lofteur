@@ -13,12 +13,12 @@ public class Vorace extends Lofteur {
     }
 
     public void deplacer() {
-        int a, b, i, j;
+        int a=0, b=0, i, j;
         boolean trouve = false;
         for (i = -1; i<=1; i++) {
             for (j = -1; j<=1; j++) {
                 if ((0 <= this.x + i) && (this.x + i <= 99) && (0 <= this.x + i) && (this.x + i <= 99)) {
-                    if (!this.loft.tableNourriture[x + i][y + j].isEmpty()) {
+                    if (!(this.loft.tableNourriture[x + i][y + j]==null)) {
                         a = i;
                         b = j;
                         trouve = true;

@@ -14,7 +14,7 @@ public class Cannibale extends Vorace {
         super.manger();
         if ((this.loft.tableLofteur[x][y].length > 0) && (this.besoin > this.energie)) {
             this.energie += this.loft.tableLofteur[x][y][0].energie;
-            this.loft.supprimeLofteur(this.loft.tableLofteur[x][y][0]);
+            this.loft.supprimeLofteur(x, y, 0);
         }
 
     }
