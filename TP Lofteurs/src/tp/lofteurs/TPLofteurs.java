@@ -9,6 +9,8 @@ package tp.lofteurs;
  * @author jonathancozzo
  */
 public class TPLofteurs {
+    public static int TAILLE_FENETRE_X = 600 ;
+    public static int TAILLE_FENETRE_Y = 600 ;
 
     /**
      * @param args the command line arguments
