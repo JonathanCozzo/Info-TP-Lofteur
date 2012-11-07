@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /TP Lofteurs/nbproject/private//.project
 /TP Lofteurs/.classpath
 /TP Lofteurs/.project
@@ -16,3 +17,8 @@
 /TP Lofteurs/bin/tp/lofteurs/Vorace.class
 /TP Lofteurs/bin/tp/lofteurs/ObjetDessinable.class
 /.project
+=======
+/TP Lofteurs/nbproject/private/
+TP Lofteurs/src/tp/.DS_Store
+/TP Lofteurs/nbproject/
+>>>>>>> 4cc855b06cbd179270c78be07e8677bde5fea451

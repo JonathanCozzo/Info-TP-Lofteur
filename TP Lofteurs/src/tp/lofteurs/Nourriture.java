@@ -10,7 +10,7 @@ import java.awt.Graphics;
  *
  * @author jonathancozzo
  */
-public abstract class Nourriture implements ObjetDessinable{
+public abstract class Nourriture implements ObjetDessinable {
 	protected int valEnerg;
 	
 	public Nourriture(int val){

@@ -1,13 +1,22 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * 
  */
-package tp.lofteurs;
+package com.objet.lofteurs;
+
+import java.awt.Graphics;
 
 /**
+ * interface des objets dessinables ; ils devront simplement implanter une méthode de dessin
+ * à partir d'un contexte graphique passé par l'application
+ * 
+ * @author moreau
  *
- * @author jonathancozzo
  */
 public interface ObjetDessinable {
-    
+	/**
+	 * fonction de dessin ; à surcharger
+	 * @param g le contexte graphique
+	 */
+	public void dessinerObjet(Graphics g);
+
 }
